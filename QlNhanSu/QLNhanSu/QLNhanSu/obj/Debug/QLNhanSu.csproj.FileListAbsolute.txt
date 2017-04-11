@@ -1,0 +1,9 @@
+F:\Bài tập web\QLNhanSu\QLNhanSu\bin\Debug\QLNhanSu.exe.config
+F:\Bài tập web\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.csprojResolveAssemblyReference.cache
+F:\Bài tập web\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.Form1.resources
+F:\Bài tập web\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.Properties.Resources.resources
+F:\Bài tập web\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.csproj.GenerateResource.Cache
+F:\Bài tập web\QLNhanSu\QLNhanSu\bin\Debug\QLNhanSu.exe
+F:\Bài tập web\QLNhanSu\QLNhanSu\bin\Debug\QLNhanSu.pdb
+F:\Bài tập web\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.exe
+F:\Bài tập web\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.pdb
