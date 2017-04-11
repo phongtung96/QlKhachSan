@@ -1,0 +1,19 @@
+c:\users\nguyenhiep\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Main.resources
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.KQHT.resources
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuaGiaoVien.resources
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuaHocSinh.resources
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThemGV.resources
+C:\Users\NguyenHiep\Documents\Visual Studio 2015\Projects\QuanLiGV-SV\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThemHS.resources
+C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li khach san\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li khach san\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li khach san\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
