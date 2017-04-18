@@ -13,7 +13,9 @@ namespace WindowsFormsApplication1
 {
     public partial class Main : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True");
+        public static string strcon = "Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True";
+
+        public static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True");
         public static string Username = string.Empty;
         public Main()
         {
