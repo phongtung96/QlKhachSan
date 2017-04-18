@@ -13,8 +13,6 @@ namespace WindowsFormsApplication1
 {
     public partial class Main : Form
     {
-        public static string strcon = "Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True";
-
         public static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True");
         public static string Username = string.Empty;
         public Main()
@@ -114,7 +112,7 @@ namespace WindowsFormsApplication1
 
         private void txbMaGV_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if(e.KeyValue == 13)
+            if (e.KeyValue == 13)
             {
                 TimKiemGV();
             }
@@ -127,7 +125,7 @@ namespace WindowsFormsApplication1
 
         private void txbTenGV_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if(e.KeyValue == 13)
+            if (e.KeyValue == 13)
             {
                 TimKiemGV();
             }
@@ -159,10 +157,10 @@ namespace WindowsFormsApplication1
             da.Fill(dt);
             dgvHS.DataSource = dt;
         }
-        
+
         private void txbMaHS_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if(e.KeyValue == 13)
+            if (e.KeyValue == 13)
             {
                 TimKiemHS();
             }
@@ -175,7 +173,7 @@ namespace WindowsFormsApplication1
 
         private void txbTenHS_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if(e.KeyValue == 13)
+            if (e.KeyValue == 13)
             {
                 TimKiemHS();
             }
