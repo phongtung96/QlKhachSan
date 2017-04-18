@@ -13,8 +13,6 @@ namespace WindowsFormsApplication1
 {
     public partial class ThemHS : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True");
-
         public ThemHS()
         {
             InitializeComponent();
@@ -28,7 +26,7 @@ namespace WindowsFormsApplication1
         private void btThem_Click(object sender, EventArgs e)
         {
             string sql = "ThemGV ";
-            SqlCommand com = new SqlCommand(sql, con);
+            SqlCommand com = new SqlCommand(sql, Main.con);
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@mahs", txtMaHS.Text);
             com.Parameters.AddWithValue("@ten", txtHT.Text);
