@@ -32,7 +32,7 @@
             this.grbTTGV = new System.Windows.Forms.GroupBox();
             this.dtpNS = new System.Windows.Forms.DateTimePicker();
             this.btCancel = new System.Windows.Forms.Button();
-            this.btSua = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtChucVu = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             // 
             this.grbTTGV.Controls.Add(this.dtpNS);
             this.grbTTGV.Controls.Add(this.btCancel);
-            this.grbTTGV.Controls.Add(this.btSua);
+            this.grbTTGV.Controls.Add(this.btThem);
             this.grbTTGV.Controls.Add(this.pictureBox1);
             this.grbTTGV.Controls.Add(this.txtChucVu);
             this.grbTTGV.Controls.Add(this.label10);
@@ -106,15 +106,15 @@
             this.btCancel.UseVisualStyleBackColor = true;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
-            // btSua
+            // btThem
             // 
-            this.btSua.Location = new System.Drawing.Point(265, 260);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(75, 23);
-            this.btSua.TabIndex = 7;
-            this.btSua.Text = "Thêm";
-            this.btSua.UseVisualStyleBackColor = true;
-            this.btSua.Click += new System.EventHandler(this.btSua_Click);
+            this.btThem.Location = new System.Drawing.Point(265, 260);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(75, 23);
+            this.btThem.TabIndex = 7;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // pictureBox1
             // 
@@ -301,7 +301,7 @@
         private System.Windows.Forms.GroupBox grbTTGV;
         private System.Windows.Forms.DateTimePicker dtpNS;
         private System.Windows.Forms.Button btCancel;
-        private System.Windows.Forms.Button btSua;
+        private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtChucVu;
         private System.Windows.Forms.Label label10;

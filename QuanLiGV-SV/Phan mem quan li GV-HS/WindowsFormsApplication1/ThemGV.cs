@@ -23,10 +23,15 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void btSua_Click(object sender, EventArgs e)
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
         {
             string sql = "ThemGV ";
-            SqlCommand com = new SqlCommand(sql, Main.con);
+            SqlCommand com = new SqlCommand(sql, Login.con);
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@magv", txtMaGV.Text);
             com.Parameters.AddWithValue("@ten", txtHT.Text);
@@ -45,11 +50,6 @@ namespace WindowsFormsApplication1
             }
             else
                 MessageBox.Show("Không thể thêm", "Thông báo");
-        }
-
-        private void btCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

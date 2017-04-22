@@ -32,3 +32,6 @@ C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem
 C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

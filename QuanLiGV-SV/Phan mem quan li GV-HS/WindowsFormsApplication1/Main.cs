@@ -13,7 +13,6 @@ namespace WindowsFormsApplication1
 {
     public partial class Main : Form
     {
-        public static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True");
         public static string Username = string.Empty;
         public Main()
         {
@@ -50,13 +49,14 @@ namespace WindowsFormsApplication1
         private void btHS_Click(object sender, EventArgs e)
         {
             string sql = "DS_HS ";
-            SqlCommand com = new SqlCommand(sql, con);
+            SqlCommand com = new SqlCommand(sql, Login.con);
             com.CommandType = CommandType.StoredProcedure;
 
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dgvHS.DataSource = dt;
+            dgvHS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             grbTB.Hide();
             grbGV.Hide();
@@ -66,13 +66,14 @@ namespace WindowsFormsApplication1
         private void btGV_Click(object sender, EventArgs e)
         {
             string sql = "DS_GV";
-            SqlCommand com = new SqlCommand(sql, con);
+            SqlCommand com = new SqlCommand(sql, Login.con);
             com.CommandType = CommandType.StoredProcedure;
 
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dgvGV.DataSource = dt;
+            dgvGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             grbTB.Hide();
             grbHS.Hide();
@@ -92,7 +93,7 @@ namespace WindowsFormsApplication1
         private void TimKiemGV()
         {
             string sql = "TimKiemGV ";
-            SqlCommand com = new SqlCommand(sql, con);
+            SqlCommand com = new SqlCommand(sql, Login.con);
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@magv", txbMaGV.Text);
             com.Parameters.AddWithValue("@ten", txbTenGV.Text);
@@ -144,7 +145,7 @@ namespace WindowsFormsApplication1
         private void TimKiemHS()
         {
             string sql = "TimKiemHS ";
-            SqlCommand com = new SqlCommand(sql, con);
+            SqlCommand com = new SqlCommand(sql, Login.con);
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@mahs", txbMaHS.Text);
             com.Parameters.AddWithValue("@ten", txbTenHS.Text);
@@ -199,5 +200,27 @@ namespace WindowsFormsApplication1
             TimKiemHS();
         }
 
+        private void dgvGV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SuaGiaoVien.magv = Convert.ToString(dgvGV.CurrentRow.Cells["IdGV"].Value);
+            SuaGiaoVien.tengv = Convert.ToString(dgvGV.CurrentRow.Cells["TenGV"].Value);
+            SuaGiaoVien.ns = Convert.ToString(dgvGV.CurrentRow.Cells["NgaySinh"].Value);
+            SuaGiaoVien.gt = Convert.ToString(dgvGV.CurrentRow.Cells["GioiTinh"].Value);
+            SuaGiaoVien.dt = Convert.ToString(dgvGV.CurrentRow.Cells["DanToc"].Value);
+            SuaGiaoVien.trinhdohv = Convert.ToString(dgvGV.CurrentRow.Cells["trinhDoHV"].Value);
+            SuaGiaoVien.sodt = Convert.ToString(dgvGV.CurrentRow.Cells["SoDT"].Value);
+            SuaGiaoVien.email = Convert.ToString(dgvGV.CurrentRow.Cells["Email"].Value);
+            SuaGiaoVien.bm = Convert.ToString(dgvGV.CurrentRow.Cells["BoMon"].Value);
+            SuaGiaoVien.chucvu = Convert.ToString(dgvGV.CurrentRow.Cells["ChucVu"].Value);
+
+            btSuaGV.Enabled = true;
+            btXoaGV.Enabled = true;
+        }
+
+        private void btSuaGV_Click(object sender, EventArgs e)
+        {
+            SuaGiaoVien sgv = new SuaGiaoVien();
+            sgv.Show();
+        }
     }
 }

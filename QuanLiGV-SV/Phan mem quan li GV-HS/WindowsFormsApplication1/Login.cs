@@ -13,13 +13,13 @@ namespace WindowsFormsApplication1
 {
     public partial class Login : Form
     {
+        public static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-5M6BAVS\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True");
+
         public Login()
         {
             InitializeComponent();
         }
-
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-N728DT6\SQLEXPRESS;Initial Catalog=QuanLiHS-GV;Integrated Security=True");
-
+        
         private void Login_Load(object sender, EventArgs e)
         {
             con.Open();

@@ -54,14 +54,12 @@
             this.txtHT = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btXoa = new System.Windows.Forms.Button();
             this.grbTTGV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbTTGV
             // 
-            this.grbTTGV.Controls.Add(this.btXoa);
             this.grbTTGV.Controls.Add(this.dtpNS);
             this.grbTTGV.Controls.Add(this.lbHT);
             this.grbTTGV.Controls.Add(this.btCancel);
@@ -111,21 +109,23 @@
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(435, 262);
+            this.btCancel.Location = new System.Drawing.Point(389, 262);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(75, 23);
             this.btCancel.TabIndex = 8;
             this.btCancel.Text = "Hủy";
             this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(209, 262);
+            this.btSua.Location = new System.Drawing.Point(261, 262);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(75, 23);
             this.btSua.TabIndex = 7;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // pictureBox1
             // 
@@ -292,15 +292,6 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Trình Độ HV";
             // 
-            // btXoa
-            // 
-            this.btXoa.Location = new System.Drawing.Point(324, 262);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(75, 23);
-            this.btXoa.TabIndex = 27;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
-            // 
             // SuaGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +300,7 @@
             this.Controls.Add(this.grbTTGV);
             this.Name = "SuaGiaoVien";
             this.Text = "GiaoVien";
+            this.Load += new System.EventHandler(this.SuaGiaoVien_Load);
             this.grbTTGV.ResumeLayout(false);
             this.grbTTGV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -343,6 +335,5 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtpNS;
-        private System.Windows.Forms.Button btXoa;
     }
 }
