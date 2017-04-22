@@ -222,5 +222,19 @@ namespace WindowsFormsApplication1
             SuaGiaoVien sgv = new SuaGiaoVien();
             sgv.Show();
         }
+
+        private void dgvHS_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SuaHocSinh.mahs = Convert.ToString(dgvGV.CurrentRow.Cells["IdHS"].Value);
+            SuaHocSinh.tenhs = Convert.ToString(dgvGV.CurrentRow.Cells["TenHS"].Value);
+            SuaHocSinh.ns = Convert.ToString(dgvGV.CurrentRow.Cells["NS"].Value);
+            SuaHocSinh.gt = Convert.ToString(dgvGV.CurrentRow.Cells["GT"].Value);
+            SuaHocSinh.dt = Convert.ToString(dgvGV.CurrentRow.Cells["DT"].Value);
+            SuaHocSinh.lop = Convert.ToString(dgvGV.CurrentRow.Cells["TenLop"].Value);
+            SuaHocSinh.diachi = Convert.ToString(dgvGV.CurrentRow.Cells["DiaChi"].Value);
+
+            btSuaHS.Enabled = true;
+            btXoaHS.Enabled = true;
+        }
     }
 }
