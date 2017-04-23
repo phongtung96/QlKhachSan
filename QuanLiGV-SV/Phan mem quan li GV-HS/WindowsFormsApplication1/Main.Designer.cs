@@ -92,6 +92,7 @@
             this.GT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KhoaHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenGVCN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
@@ -173,8 +174,9 @@
             // hướngDẫnToolStripMenuItem
             // 
             this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
+            this.hướngDẫnToolStripMenuItem.Click += new System.EventHandler(this.hướngDẫnToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -248,7 +250,6 @@
             // 
             // grbGV
             // 
-            this.grbGV.Controls.Add(this.grbHS);
             this.grbGV.Controls.Add(this.btXoaGV);
             this.grbGV.Controls.Add(this.dtpNSGV);
             this.grbGV.Controls.Add(this.label6);
@@ -282,7 +283,7 @@
             this.grbHS.Controls.Add(this.label3);
             this.grbHS.Controls.Add(this.label4);
             this.grbHS.Controls.Add(this.cboLop);
-            this.grbHS.Location = new System.Drawing.Point(0, 0);
+            this.grbHS.Location = new System.Drawing.Point(105, 114);
             this.grbHS.Name = "grbHS";
             this.grbHS.Size = new System.Drawing.Size(846, 426);
             this.grbHS.TabIndex = 8;
@@ -354,6 +355,7 @@
             this.btSuaHS.TabIndex = 16;
             this.btSuaHS.Text = "Sửa";
             this.btSuaHS.UseVisualStyleBackColor = true;
+            this.btSuaHS.Click += new System.EventHandler(this.btSuaHS_Click);
             // 
             // dgvHS
             // 
@@ -368,6 +370,7 @@
             this.GT,
             this.DT,
             this.TenLop,
+            this.DiaChi,
             this.KhoaHoc,
             this.TenGVCN});
             this.dgvHS.Location = new System.Drawing.Point(0, 47);
@@ -377,6 +380,7 @@
             this.dgvHS.Size = new System.Drawing.Size(846, 379);
             this.dgvHS.TabIndex = 14;
             this.dgvHS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHS_CellClick);
+            this.dgvHS.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHS_CellContentDoubleClick);
             this.dgvHS.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvHS_RowPrePaint);
             // 
             // txbTenHS
@@ -406,9 +410,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Mã SV";
+            this.label2.Text = "Mã HS";
             // 
             // label3
             // 
@@ -571,6 +575,7 @@
             this.dgvGV.Size = new System.Drawing.Size(846, 379);
             this.dgvGV.TabIndex = 0;
             this.dgvGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGV_CellClick);
+            this.dgvGV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGV_CellDoubleClick);
             this.dgvGV.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvGV_RowPrePaint);
             // 
             // STTGV
@@ -749,6 +754,13 @@
             this.TenLop.ReadOnly = true;
             this.TenLop.Width = 50;
             // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            // 
             // KhoaHoc
             // 
             this.KhoaHoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -772,6 +784,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(951, 540);
+            this.Controls.Add(this.grbHS);
             this.Controls.Add(this.grbTB);
             this.Controls.Add(this.grbGV);
             this.Controls.Add(this.menuStrip1);
@@ -810,13 +823,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.GroupBox grbGV;
         private System.Windows.Forms.DataGridView dgvGV;
         private System.Windows.Forms.Label lbMaGV;
         private System.Windows.Forms.Label lbTenGV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboBM;
-        private System.Windows.Forms.GroupBox grbHS;
         private System.Windows.Forms.TextBox txbTenGV;
         private System.Windows.Forms.TextBox txbMaGV;
         private System.Windows.Forms.DataGridView dgvHS;
@@ -838,7 +849,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpNSHS;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox grbTB;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btXoaHS;
         private System.Windows.Forms.Button btXoaGV;
@@ -853,6 +863,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn BoMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn ChucVu;
+        private System.Windows.Forms.GroupBox grbGV;
+        private System.Windows.Forms.GroupBox grbHS;
+        private System.Windows.Forms.GroupBox grbTB;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdHS;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenHS;
@@ -860,6 +873,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn GT;
         private System.Windows.Forms.DataGridViewTextBoxColumn DT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenLop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn KhoaHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenGVCN;
     }

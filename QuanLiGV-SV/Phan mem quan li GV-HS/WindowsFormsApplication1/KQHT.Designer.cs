@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbHT = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbMaSV = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbNS = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.lbLop = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbNS = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbMaHS = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbHT = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTTHT = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TBHK1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TBHK2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,7 +56,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.lbNS);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.lbMaSV);
+            this.groupBox1.Controls.Add(this.lbMaHS);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lbHT);
             this.groupBox1.Controls.Add(this.label1);
@@ -68,56 +67,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cá nhân";
             // 
-            // label1
+            // lbLop
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Họ Tên:";
-            // 
-            // lbHT
-            // 
-            this.lbHT.AutoSize = true;
-            this.lbHT.Location = new System.Drawing.Point(95, 29);
-            this.lbHT.Name = "lbHT";
-            this.lbHT.Size = new System.Drawing.Size(0, 13);
-            this.lbHT.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mã SV: ";
-            // 
-            // lbMaSV
-            // 
-            this.lbMaSV.AutoSize = true;
-            this.lbMaSV.Location = new System.Drawing.Point(95, 67);
-            this.lbMaSV.Name = "lbMaSV";
-            this.lbMaSV.Size = new System.Drawing.Size(0, 13);
-            this.lbMaSV.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(311, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Ngày Sinh:";
-            // 
-            // lbNS
-            // 
-            this.lbNS.AutoSize = true;
-            this.lbNS.Location = new System.Drawing.Point(376, 29);
-            this.lbNS.Name = "lbNS";
-            this.lbNS.Size = new System.Drawing.Size(0, 13);
-            this.lbNS.TabIndex = 5;
+            this.lbLop.AutoSize = true;
+            this.lbLop.Location = new System.Drawing.Point(379, 67);
+            this.lbLop.Name = "lbLop";
+            this.lbLop.Size = new System.Drawing.Size(0, 13);
+            this.lbLop.TabIndex = 7;
             // 
             // label7
             // 
@@ -128,20 +84,63 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Lớp:";
             // 
-            // lbLop
+            // lbNS
             // 
-            this.lbLop.AutoSize = true;
-            this.lbLop.Location = new System.Drawing.Point(379, 67);
-            this.lbLop.Name = "lbLop";
-            this.lbLop.Size = new System.Drawing.Size(0, 13);
-            this.lbLop.TabIndex = 7;
+            this.lbNS.AutoSize = true;
+            this.lbNS.Location = new System.Drawing.Point(379, 29);
+            this.lbNS.Name = "lbNS";
+            this.lbNS.Size = new System.Drawing.Size(0, 13);
+            this.lbNS.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(311, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Ngày Sinh:";
+            // 
+            // lbMaHS
+            // 
+            this.lbMaHS.AutoSize = true;
+            this.lbMaHS.Location = new System.Drawing.Point(104, 67);
+            this.lbMaHS.Name = "lbMaHS";
+            this.lbMaHS.Size = new System.Drawing.Size(0, 13);
+            this.lbMaHS.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(42, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Mã HS: ";
+            // 
+            // lbHT
+            // 
+            this.lbHT.AutoSize = true;
+            this.lbHT.Location = new System.Drawing.Point(104, 29);
+            this.lbHT.Name = "lbHT";
+            this.lbHT.Size = new System.Drawing.Size(0, 13);
+            this.lbHT.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(42, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Họ Tên:";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvTTHT);
             this.groupBox2.Location = new System.Drawing.Point(24, 170);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(646, 224);
+            this.groupBox2.Size = new System.Drawing.Size(646, 260);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin học tập";
@@ -152,7 +151,6 @@
             this.dgvTTHT.AllowUserToDeleteRows = false;
             this.dgvTTHT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTTHT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
             this.NamHoc,
             this.TBHK1,
             this.TBHK2,
@@ -163,15 +161,8 @@
             this.dgvTTHT.Name = "dgvTTHT";
             this.dgvTTHT.ReadOnly = true;
             this.dgvTTHT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTTHT.Size = new System.Drawing.Size(634, 195);
+            this.dgvTTHT.Size = new System.Drawing.Size(634, 231);
             this.dgvTTHT.TabIndex = 0;
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
-            this.STT.Width = 50;
             // 
             // NamHoc
             // 
@@ -224,11 +215,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 406);
+            this.ClientSize = new System.Drawing.Size(694, 456);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "KQHT";
             this.Text = "Kết Quả Học Tập";
+            this.Load += new System.EventHandler(this.KQHT_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -244,13 +236,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbNS;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lbMaSV;
+        private System.Windows.Forms.Label lbMaHS;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbHT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgvTTHT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn NamHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn TBHK1;
         private System.Windows.Forms.DataGridViewTextBoxColumn TBHK2;

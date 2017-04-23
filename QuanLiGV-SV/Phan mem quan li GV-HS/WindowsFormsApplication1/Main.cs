@@ -21,7 +21,9 @@ namespace WindowsFormsApplication1
 
         private void Main_Load(object sender, EventArgs e)
         {
-            
+            grbTB.Show();
+            grbHS.Hide();
+            grbGV.Hide();
         }
 
         private void mntThemGV_Click(object sender, EventArgs e)
@@ -44,6 +46,8 @@ namespace WindowsFormsApplication1
         private void btTB_Click(object sender, EventArgs e)
         {
             grbTB.Show();
+            grbHS.Hide();
+            grbGV.Hide();
         }
 
         private void btHS_Click(object sender, EventArgs e)
@@ -100,10 +104,17 @@ namespace WindowsFormsApplication1
             com.Parameters.AddWithValue("@ns", Convert.ToDateTime(dtpNSGV.Text));
             com.Parameters.AddWithValue("@bomon", cboBM.Text);
 
-            SqlDataAdapter da = new SqlDataAdapter(com);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgvGV.DataSource = dt;
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvGV.DataSource = dt;
+            }
+            catch(SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
 
         private void txbMaGV_Leave(object sender, EventArgs e)
@@ -199,7 +210,7 @@ namespace WindowsFormsApplication1
         {
             TimKiemHS();
         }
-
+        
         private void dgvGV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             SuaGiaoVien.magv = Convert.ToString(dgvGV.CurrentRow.Cells["IdGV"].Value);
@@ -223,18 +234,45 @@ namespace WindowsFormsApplication1
             sgv.Show();
         }
 
+        private void dgvGV_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
         private void dgvHS_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            SuaHocSinh.mahs = Convert.ToString(dgvGV.CurrentRow.Cells["IdHS"].Value);
-            SuaHocSinh.tenhs = Convert.ToString(dgvGV.CurrentRow.Cells["TenHS"].Value);
-            SuaHocSinh.ns = Convert.ToString(dgvGV.CurrentRow.Cells["NS"].Value);
-            SuaHocSinh.gt = Convert.ToString(dgvGV.CurrentRow.Cells["GT"].Value);
-            SuaHocSinh.dt = Convert.ToString(dgvGV.CurrentRow.Cells["DT"].Value);
-            SuaHocSinh.lop = Convert.ToString(dgvGV.CurrentRow.Cells["TenLop"].Value);
-            SuaHocSinh.diachi = Convert.ToString(dgvGV.CurrentRow.Cells["DiaChi"].Value);
+            SuaHocSinh.mahs = Convert.ToString(dgvHS.CurrentRow.Cells["IdHS"].Value);
+            SuaHocSinh.tenhs = Convert.ToString(dgvHS.CurrentRow.Cells["TenHS"].Value);
+            SuaHocSinh.ns = Convert.ToString(dgvHS.CurrentRow.Cells["NS"].Value);
+            SuaHocSinh.gt = Convert.ToString(dgvHS.CurrentRow.Cells["GT"].Value);
+            SuaHocSinh.dt = Convert.ToString(dgvHS.CurrentRow.Cells["DT"].Value);
+            SuaHocSinh.lop = Convert.ToString(dgvHS.CurrentRow.Cells["TenLop"].Value);
+            SuaHocSinh.diachi = Convert.ToString(dgvHS.CurrentRow.Cells["DiaChi"].Value);
 
             btSuaHS.Enabled = true;
             btXoaHS.Enabled = true;
+        }
+
+        private void btSuaHS_Click(object sender, EventArgs e)
+        {
+            SuaHocSinh shs = new SuaHocSinh();
+            shs.Show();
+        }
+
+        private void dgvHS_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            KQHT.mahs = Convert.ToString(dgvHS.CurrentRow.Cells["IdHS"].Value);
+            KQHT.tenhs = Convert.ToString(dgvHS.CurrentRow.Cells["TenHS"].Value);
+            KQHT.lop = Convert.ToString(dgvHS.CurrentRow.Cells["TenLop"].Value);
+            KQHT.ns = Convert.ToString(dgvHS.CurrentRow.Cells["NS"].Value);
+
+            KQHT kq = new KQHT();
+            kq.Show();
+        }
+
+        private void hướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

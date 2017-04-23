@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
         private void btThem_Click(object sender, EventArgs e)
         {
             string sql = "ThemGV ";
-            SqlCommand com = new SqlCommand(sql, Main.con);
+            SqlCommand com = new SqlCommand(sql, Login.con);
             com.CommandType = CommandType.StoredProcedure;
             com.Parameters.AddWithValue("@mahs", txtMaHS.Text);
             com.Parameters.AddWithValue("@ten", txtHT.Text);

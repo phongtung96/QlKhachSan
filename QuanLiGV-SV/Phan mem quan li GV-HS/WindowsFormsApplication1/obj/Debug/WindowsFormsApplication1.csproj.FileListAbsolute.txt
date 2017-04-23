@@ -35,3 +35,15 @@ C:\Users\NguyenHiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem
 C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.KQHT.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuaGiaoVien.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuaHocSinh.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Main.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThemGV.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThemHS.resources
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Hiep\Documents\GitHub\ThucTapNhom\QlKhachSan\QuanLiGV-SV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
